@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Manege Tabs",
+  "description": "Tabs all in one",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon.png",
+    "32": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "action": {
+    "default_popup": "../popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*/*"
+  ]
+}
