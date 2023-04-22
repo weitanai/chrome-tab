@@ -23,7 +23,7 @@ jobs:
       - name: Set node
         uses: actions/setup-node@v3
         with:
-          node-version: 18.xga a
+          node-version: 18.x
           cache: pnpm
 
       - name: Lint
