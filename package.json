@@ -4,7 +4,6 @@
   "description": "",
   "main": "popup.js",
   "scripts": {
-    "lint": "eslint .",
     "test": "vitest",
     "dev": "vite build --watch",
     "build": "vite build",

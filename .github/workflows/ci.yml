@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -26,10 +26,10 @@ jobs:
           node-version: 18.x
           cache: pnpm
 
-      - name: Lint
-        run: npm run lint
+      - name: Test
+        run: npm run test
 
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -47,6 +47,3 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Test
-        run: npm run test
