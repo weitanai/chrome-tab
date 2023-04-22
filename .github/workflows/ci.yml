@@ -23,13 +23,14 @@ jobs:
       - name: Set node
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 18.xga a
           cache: pnpm
 
       - name: Lint
         run: npm run lint
 
   test:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 

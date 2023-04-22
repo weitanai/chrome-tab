@@ -5,7 +5,7 @@
   "main": "popup.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
     "dev": "vite build --watch",
     "build": "vite build",
     "release": "node scripts/index.mjs",
@@ -19,12 +19,13 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "vite-plugin-crx-mv3": "^0.1.1",
     "chalk": "^5.2.0",
     "conventional-changelog": "^3.1.25",
     "conventional-changelog-cli": "^2.2.2",
     "enquirer": "^2.3.6",
     "execa": "^7.1.1",
-    "semver": "^7.3.8"
+    "semver": "^7.3.8",
+    "vite-plugin-crx-mv3": "^0.1.1",
+    "vitest": "^0.30.1"
   }
 }
